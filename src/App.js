@@ -19,8 +19,9 @@ class App extends React.Component{
             }
         }
         console.log(bool);
-        if(!bool){ 
-        const id=this.state.items.length +1;
+        if(!bool){
+        let d= new Date(); 
+        const id=Date.parse(d);
         const record ={
             id,
             title:item

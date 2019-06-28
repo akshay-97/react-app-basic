@@ -7,7 +7,7 @@ const Lists = (props) => {
                 props.items.map((i)=>{  
                     return(
                     <div>   
-                        <li className="list-group-item"><ListItem item={i} deleteItem={props.deleteItem} /></li>
+                        <li key={i.id} className="list-group-item"><ListItem item={i} deleteItem={props.deleteItem} /></li>
                     </div>    
                     ); 
                 })
